@@ -1,0 +1,204 @@
+.nifty-menu-options-settings-container {
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+.nifty-menu-options-settings-inner {
+    display: block;
+    color: #72777c;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+}
+.nifty-icon-picker {
+    text-decoration: none;
+    &:focus {
+        box-shadow: none;
+    }
+    * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .nifty-icon-selected {
+        color: #212121;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+}
+.nifty-section {
+    padding: 10px 0 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+}
+// Thinkbox Modal
+#TB_ajaxContent {
+    &.nifty-thickbox-modal {
+        overflow-x: hidden;
+        // overflow: visible;
+        // .nifty-icon-selector-container {
+        //     overflow: hidden;
+        //     overflow-y: scroll;
+        //     height: 493px;
+        // }
+    }
+}
+#TB_title {
+    &.nifty-thickbox-title {
+        height: auto;
+        min-height: 40px;
+        #TB_closeWindowButton {
+            &:focus {
+                .tb-close-icon {
+                    box-shadow: none;
+                }
+            }
+        }
+        .tb-close-icon {
+            min-height: 40px;
+            min-width: 40px;
+            line-height: 45px;
+        }
+    }
+    #TB_ajaxWindowTitle {
+        h2 {
+            width: 100%;
+            margin: 0;
+            padding: 5px 0;
+            display: inline-block;
+        }
+    }
+}
+#TB_ajaxContent {
+    .nifty-message {
+        background: #03a9f4;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius:  4px;
+        font-size: 12px;
+        &.warning {
+            background: #ffa726;
+        }
+        &.invalid {
+            background: #EF5350;
+        }
+    }
+}
+
+.nifty-header-wrapper {
+    margin: -4px -15px 0px;
+    padding:  20px 5px;
+    background: #f1f0f0;
+    position: sticky;
+    top: -2px;
+    z-index: 9;
+    .nifty-inner-wrap {
+        display:  inline-block;
+        width: 50%;
+		&.wrapper-center,
+		&.wrapper-right {
+		    width:  25%;
+		}
+		&.wrapper-center {
+			select {
+				width: 95%;
+			}
+		}
+		&.wrapper-right {
+			select {
+				width: 100%;
+			}
+		}
+    }
+    .nifty-icon-search {
+        width: 95%;
+    }
+}
+
+
+ul.nifty-icon-selector-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: 0px -15px -2px;
+    li.nifty-icon-item {
+        width: 100%;
+        position: relative;
+        flex-grow: 1;
+        flex-basis: 10%;
+        max-width: 10%;
+        text-align: center;
+        margin: 0;
+        &.hide {
+            display: none;
+        }
+    }
+    .nifty-icon-label {
+        width: 100%;
+        color: #4c4c4c;
+        padding: 15px 0;
+        border: 1px solid #E0E0E0;
+        display: inline-block;
+        transition: background color 0.15s ease-in-out;
+        &.selected,
+        &:hover {
+            color: #00b8ff;
+            background-color: #cef2f7;
+            .nifty-displayed-icon {
+                transform: scale(1.5);
+            }
+        }
+        .nifty-icon-selector {
+            display: none;
+        }
+        .nifty-displayed-icon {
+            font-size: 1.25em;
+            transition: transform 0.15s ease-in-out;
+        }
+    }
+}
+input[type=number].nifty-number-field {
+    &.small-text {
+        width: 50px;
+    }
+}
+.wp-admin select {
+    &.nifty-select {
+        text-transform: capitalize;
+        margin: 0;
+        height: 27px;
+        vertical-align: unset;
+    }
+}
+.nifty-remove-icon {
+    color: #72777c;
+    transition: color 0.25s ease-in-out;
+    float: right;
+    &:hover {
+        color: #F44336;
+    }
+    &:focus {
+        color: #F44336;
+        box-shadow: none;
+    }
+}
+.label_vcenter label {
+    position: relative;
+    top: -4.5px;
+}
+.nifty-icon-color-picker-wrap {
+    .wp-color-result.button {
+        margin: 0;
+    }
+}
+
+.nifty-dump {
+	margin-left: 200px;
+}
